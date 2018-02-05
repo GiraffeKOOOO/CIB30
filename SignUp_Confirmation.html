@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="RorySS.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 1.0s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: teal;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left 1.0s;
+    padding: 1px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body bgcolor="teal">
+  <ul>
+    <img src="neymar.png" width="200" height="150" alt="FootballDugout">
+    <img src="stadium.jpg" width="200" height="150" alt="FootballDugout">
+	<img src="messi.png" width="200" height="150" alt="FootballDugout">
+	<img src="jose.jpg" width="200" height="150" alt="FootballDugout">
+	<img src="dugout.png" width="200" height="150" alt="FootballDugout">
+	<img src="dele.jpg" width="200" height="150" alt="FootballDugout">
+	<img src="jurgen.jpg" width="200" height="150" alt="FootballDugout">
+	<img src="neymar.png" width="200" height="150" alt="FootballDugout">
+	<img src="alexis.jpg" width="200" height="150" alt="FootballDugout">
+</ul>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="Home.html">Home</a>
+  <a href="Shop.html">Shop</a>
+  <a href="News.html">News</a>
+  <a href="Activity.html">Activity</a>
+  <a href="Signup.html">Sign up</a>
+</div>
+
+<div id="main">
+  <h1>The Dugout</h1>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Open</span>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "150px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+<p>
+<h1><font face="arial" size="12" color="black"> Payment Cofirmed you will recieve an email confirmation for your order. <font> <align=center </h1>
+</p>
+</body>
+<footer><u><font face="arial" size="5" color="black"><center>Dugout! football ltd. &nbsp&nbsp&nbsp&nbsp UCWD Sprint 3</center><font></u></footer> 
+</html> 
