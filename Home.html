@@ -1,7 +1,43 @@
 <!DOCTYPE html>
 <html>
-
-<body bgcolor="#8DEEEE">
+<head>
+  <link rel="stylesheet" type="text/css" href="theme.css">
+<style>
+ body {background-color: rgb(0, 255, 255);}
+ 
+ section {
+ height: 100px;
+ width: 800px;
+ margin: 20px;
+ //border-width: 5px;
+ //border-color: black;
+ //border-style: solid;
+ padding: 5px;
+ }
+ 
+  article {
+ width: 800px; 
+ margin: 20px;
+ border-width: 5px;
+ border-color: black;
+ border-style: solid;
+ padding: 5px;
+ border-radius: 50px;
+ background-image: url("bg.jpg");
+ background-color: #00FFFF; 
+ }
+ 
+ #newsimages{
+ margin: 10px;
+ padding: 10px;
+ border-style: solid;
+ border-width: 10px;
+ border-color: black;
+ 
+ }
+</style>
+</head>
+<body>
 
 <header>
 <font face="arial" size="15" color="black"><center><u>The Dugout!</u></center></font>
@@ -25,7 +61,7 @@
 </nav>
 
 <section>
-  <h1>Home</h1>
+  <h1 id=samtest>Home</h1>
   Welcome to The Dugout, read more for all your football news and information
 </section>
 
@@ -34,7 +70,7 @@
  Join Adam Hurrey in appreciation of the greatest of football shirts. Not even Frank Rijkaard’s sputum could ruin it.
  <br>
  <a href="http://www.football365.com/news/world-cup-design-classics-germanys-1990-shirt">
- <img src="design.jpg" width="300" height="200">
+ <img id="newsimages" src="design.jpg" width="300" height="200">
  </a>
  <br>
 </article>
@@ -44,7 +80,7 @@
 Luke Shaw gained enough marks during his first exam back in the Man Utd XI to earn another chance
  <br>
  <a href="http://www.football365.com/news/man-utd-shaw-gains-enough-credits-to-defer-final-assessment">
- <img src="future.jpg" width="300" height="200">
+ <img id="newsimages" src="future.jpg" width="300" height="200">
  </a>
  <br>
 </article>
@@ -54,7 +90,7 @@ Luke Shaw gained enough marks during his first exam back in the Man Utd XI to ea
 As a man who was asked in January to choose his combined Liverpool and Manchester United XI and came up with this…
  <br>
  <a href="http://www.football365.com/news/mediawatch-a-bizarre-attack-on-very-poor-paul-pogba-manchester-united">
- <img src="paul.jpg" width="300" height="200">
+ <img id="newsimages" src="paul.jpg" width="300" height="200">
  </a>
  <br>
 </article>
