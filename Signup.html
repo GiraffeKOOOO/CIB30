@@ -7,7 +7,6 @@
 body {
     font-family: "Lato", sans-serif;
 }
-
 .sidenav {
     height: 100%;
     width: 0;
@@ -20,7 +19,6 @@ body {
     transition: 1.0s;
     padding-top: 60px;
 }
-
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -29,11 +27,9 @@ body {
     display: block;
     transition: 0.3s;
 }
-
 .sidenav a:hover {
     color: teal;
 }
-
 .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -41,15 +37,46 @@ body {
     font-size: 36px;
     margin-left: 50px;
 }
-
 #main {
     transition: margin-left 1.0s;
     padding: 1px;
 }
-
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+footer {
+   position:sticky;
+   bottom:0;
+   width:99.5%;
+   height:40px;
+   background:#006666;
+}
+a { 
+    color: white;
+	background-color: black;
+	padding: 10px 20px
+	
+}
+a:hover {
+	color:black;
+	background-color: white;
+}
+a:active {
+	color:white;
+	background-color: black;
+}
+table, th, td {
+    border: 1px solid black;
+	padding: 15px;
+    text-align: left;
+	caption-side: top;
+}
+tr:hover {
+	background-color: #f5f5f5;
+}
+th {
+	background-color: white;
 }
 </style>
 </head>
@@ -62,7 +89,7 @@ body {
 	<img src="dugout.png" width="200" height="150" alt="FootballDugout">
 	<img src="dele.jpg" width="200" height="150" alt="FootballDugout">
 	<img src="jurgen.jpg" width="200" height="150" alt="FootballDugout">
-	<img src="neymar.jpg" width="200" height="150" alt="FootballDugout">
+	<img src="neymar.png" width="200" height="150" alt="FootballDugout">
 	<img src="alexis.jpg" width="200" height="150" alt="FootballDugout">
 </ul>
 <div id="mySidenav" class="sidenav">
@@ -70,13 +97,12 @@ body {
   <a href="Home.html">Home</a>
   <a href="Shop.html">Shop</a>
   <a href="News.html">News</a>
-  <a href="Activity.html">Activity</a>
+  <a href="ACTIVITY_PAGE.html">Activity</a>
   <a href="Signup.html">Sign up</a>
 </div>
-
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
 <div id="main">
-  <h1>The Dugout</h1>
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Open</span>
+  <center><h1>The Dugout</h1></center>
 </div>
 
 <script>
@@ -84,25 +110,57 @@ function openNav() {
     document.getElementById("mySidenav").style.width = "150px";
     document.getElementById("main").style.marginLeft = "250px";
 }
-
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
 }
 </script>
-<p>
-<label><b>Email&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b></label>
+<center><p>
+<label><b>Email&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b></label>
 <input type="text" placeholder="Enter Email" name="email" required><br>
 <br>
-<label><b>Password&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b></label>
+<label><b>Password&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp</b></label>
 <input type="password" placeholder="Enter Password" name="pass" required><br>
 <br>
-<label><b>Repeat Password</b></label>
+<label><b>Repeat Password&nbsp&nbsp</b></label>
 <input type="password" placeholder="Repeat Password" name="passrepeat" required><br>
 <br>
-<a href="SignUp_Confirmation.html"><button type="submit" class="signupbtn">Sign Up</button></a>
+<a href="SignUp_Confirmation.html" class="a"><span style="cursor:auto">Sign Up</span></a>
 <br>
-</p> 
+<br>
+<br>
+<br>
+<br>
+<caption>By doing this you are showing appreciation for all the developers of this website!</caption>
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  <tr>
+	<td>Sam</td>
+    <td>Tanner</td>
+  </tr>
+  <tr>
+    <td>Pascal</td>
+    <td>Stepien</td>
+  </tr>
+  <tr>
+    <td>Ben</td>
+    <td>Spencer</td>
+  </tr>
+  <tr>
+    <td>Anas</td>
+    <td>Tantoun</td>
+  </tr>
+  <tr>
+    <td>Rory</td>
+    <td>Stack</td>
+  </tr>
+</table>
+</p> </center>
 </body>
-<footer><u><font face="arial" size="5" color="black"><center>Dugout! football ltd. &nbsp&nbsp&nbsp&nbsp UCWD Sprint 3</center><font></u></footer> 
+<footer><u><font face="arial" size="5" color="black"><center>Dugout! football ltd. &nbsp&nbsp&nbsp&nbsp 
+UCWD Sprint 3</center><font></u></footer> 
 </html> 

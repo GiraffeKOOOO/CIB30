@@ -46,19 +46,11 @@ body {
   .sidenav a {font-size: 18px;}
 }
 footer {
-   position:sticky;
+   position:absolute;
    bottom:0;
    width:99.5%;
    height:40px;   /* Height of the footer */
    background:#006666;
-}
-o1 {
-	font-size: 20px;
-    list-style-image: url('aaass.png');
-}
-li {
-	background: #006666;
-    padding: 20px;
 }
 </style>
 </head>
@@ -79,7 +71,7 @@ li {
   <a href="Home.html">Home</a>
   <a href="Shop.html">Shop</a>
   <a href="News.html">News</a>
-  <a href="ACTIVITY_PAGE.html">Activity</a>
+  <a href="Activity.html">Activity</a>
   <a href="Signup.html">Sign up</a>
 </div>
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
@@ -92,47 +84,24 @@ function openNav() {
     document.getElementById("mySidenav").style.width = "150px";
     document.getElementById("main").style.marginLeft = "250px";
 }
-
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
 }
 </script>
 <p>
-<h1><font face="arial" size="12" color="black"> Payment Confirmed! you will recieve an email confirmation 
-for your order.<font> <align=center> </h1>
-<font size="5">Here is a list of the promotional material you will receive by signing up:</font>
-<o1>
-  <li>Weekly updates on football related news</li>
-  <li>Offers from our sponsors</li>
-  <li>Reminder for our giveaways</li>
-</o1>
-</p>
+<label><b>Email&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b></label>
+<input type="text" placeholder="Enter Email" name="email" required><br>
+<br>
+<label><b>Password&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b></label>
+<input type="password" placeholder="Enter Password" name="pass" required><br>
+<br>
+<label><b>Repeat Password&nbsp&nbsp</b></label>
+<input type="password" placeholder="Repeat Password" name="passrepeat" required><br>
+<br>
+<a href="SignUp_Confirmation.html"><button type="submit" class="signupbtn">Sign Up</button></a>
+<br>
+</p> 
 </body>
-<footer><u><font face="arial" size="5" color="black"><center>Dugout! football ltd. &nbsp&nbsp&nbsp&nbsp 
-UCWD Sprint 3</center><font></u></footer> 
+<footer><u><font face="arial" size="5" color="black"><center>Dugout! football ltd. &nbsp&nbsp&nbsp&nbsp UCWD Sprint 3</center><font></u></footer> 
 </html> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
