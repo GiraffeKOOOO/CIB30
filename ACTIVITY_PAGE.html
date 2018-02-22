@@ -21,6 +21,65 @@ body {
     color: #000000;
     padding: 20px;
 }
+.wrapper > div {
+     border: 2px solid #FFC3E1;
+  border: 2px solid #FFC3E1;
+  border-radius: 5px;
+  background-color: #FFEEF6;
+  padding: 1em;
+  color: black;
+}
+	
+.wrapper {
+display: grid;
+grid-template-columns: repeat(7, 1fr);
+grid-gap: 10px;
+grid-auto-rows: minmax(100px, auto);
+}
+.GK {
+  grid-column: 4;
+  grid-row: 7;
+}
+.LB { 
+  grid-column: 1;
+  grid-row: 5;
+}
+.RB {
+  grid-column: 7;
+  grid-row: 5;
+}
+.CB {
+  grid-column: 3;
+  grid-row: 5;
+}
+.CB2 {
+  grid-column: 5;
+  grid-row: 5;
+}
+.LM {
+  grid-column: 1;
+  grid-row: 3;
+}
+.RM {
+  grid-column: 7;
+  grid-row: 3;
+}
+.CM {
+  grid-column: 3;
+  grid-row: 3;
+}
+.CM2 {
+  grid-column: 5;
+  grid-row: 3;
+}
+.ST {
+  grid-column: 3;
+  grid-row: 1;
+}
+.ST2 {
+  grid-column: 5;
+  grid-row: 1;
+}
 </style>
 <body>
 
@@ -107,7 +166,19 @@ body {
     <br>
     <br>
 </section>
-  
+<div class="wrapper">
+  <div class="GK">GK</div>
+  <div class="LB">LB</div>
+  <div class="CB">CB</div>
+  <div class="CB2">CB</div>
+  <div class="RB">RB</div>
+  <div class="LM">LM</div>
+  <div class="RM">RM</div>
+  <div class="CM">CM</div>
+  <div class="CM2">CM</div>
+  <div class="ST">ST</div>
+    <div class="ST2">ST</div>
+</div>
 </body>
 <footer><u><font face="arial" size="5" color="black"><center>Dugout! football ltd. &nbsp&nbsp&nbsp&nbsp UCWD Sprint 2 "The Iron Dictatorship"</center><font></u></footer> 
 </html>
