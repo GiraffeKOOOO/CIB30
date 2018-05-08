@@ -1,0 +1,5 @@
+dump:
+
+<input type="text" name="password" placeholder="password">
+<input type="text" name="first-name" placeholder="Staff First Name">
+<input type="text" name="last-name" placeholder="Staff Last Name">

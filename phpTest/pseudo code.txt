@@ -1,0 +1,10 @@
+home page(index): 	done
+login page:			somewhat done
+sign up page:
+success: 			done
+fail: 				done
+timetable(home):	done
+
+db.php:				done
+signuplogic.php:	doing
+check.php:
